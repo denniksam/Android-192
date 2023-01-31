@@ -2,6 +2,7 @@ package step.learning.basics;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,15 +15,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button addButton = findViewById( R.id.addButton ) ;
-        addButton.setOnClickListener( this::btnAddExclamationClick ) ;
+        Button calcButton = findViewById( R.id.calcButton ) ;
+        calcButton.setOnClickListener( this::btnCalcClick ) ;
+
+        findViewById( R.id.exitButton )
+                .setOnClickListener( this::btnExitClick ) ;
     }
 
-    private void btnAddExclamationClick( View v ) {
-        TextView tvHello = findViewById( R.id.tvHello ) ;
-        String txt = tvHello.getText().toString() ;
-        txt += "!" ;
-        tvHello.setText( txt ) ;
+    private void btnCalcClick( View v ) {
+        Intent calcIntent = new Intent(
+                MainActivity.this,
+                CalcActivity.class ) ;
+        startActivity( calcIntent ) ;
+    }
+    private void btnExitClick( View v ) {
+        finish() ;
     }
 }
 /*
@@ -32,4 +39,13 @@ public class MainActivity extends AppCompatActivity {
 Реалізувати проєкт, створений на занятті,
 запустити його на пристрої.
 Зробити скріншот коду + результату роботи (якщо буде репозиторій, то додати скріншот до нього)
+ */
+/*
+Одиниці вимірювання у Android
+px - pixel
+dp, dip - density independent pixel - піксель, адаптований до розміру (на 1 дюйм завжди однакова
+   їх кількість)
+sp - scalable - відносний до масштабу (для шрифтів)
+in - дюйм
+mm - міліметр
  */
