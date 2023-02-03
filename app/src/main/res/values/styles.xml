@@ -18,4 +18,9 @@
         <item name="android:background">@drawable/calc_btn_digit_shape</item>
         <item name="android:textColor">@color/calc_btn_digit_text</item>
     </style>
+
+    <style name="EqualCalcButton" parent="CalcButton">
+        <item name="android:background">@drawable/calc_btn_equal_shape</item>
+        <item name="android:textColor">@color/calc_btn_equal_text</item>
+    </style>
 </resources>

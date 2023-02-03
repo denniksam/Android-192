@@ -17,9 +17,9 @@
     <string name="btn_calc_square">x\u00B2</string>
     <string name="btn_calc_sqrt">\u221A\u2093</string>
     <string name="btn_calc_divide">\u00F7</string>
-    <string name="btn_calc_multiplication">\u00D7</string>
+    <string name="btn_calc_multiplication">\u2715</string>
     <string name="btn_calc_minus">\u2212</string>
-    <string name="btn_calc_plus">\u002B</string>
+    <string name="btn_calc_plus">\uFF0B</string>
     <string name="btn_calc_plus_minus">\u207A\u2215\u208B</string>
     <string name="btn_calc_comma">,</string>
     <string name="btn_calc_equal">\uFF1D</string>

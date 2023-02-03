@@ -18,5 +18,7 @@
     <color name="calc_btn_digit_bg">#3B3B3B</color>
 
     <color name="calc_btn_equal_text">#0A1968</color>
+    <color name="calc_btn_equal_border">#23369C</color>
+    <color name="calc_btn_equal_bg">#4CC1FE</color>
 
 </resources>
