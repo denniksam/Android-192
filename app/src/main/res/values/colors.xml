@@ -9,6 +9,10 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Calc colors -->
+    <color name="calc_layout_bg">#202020</color>
+    <color name="calc_history_text">#AAAAAA</color>
+    <color name="calc_result_text">#FEFEFE</color>
+
     <color name="calc_btn_fn_text">#EEEEEE</color>
     <color name="calc_btn_fn_border">#555555</color>
     <color name="calc_btn_fn_bg">#323232</color>
@@ -18,7 +22,7 @@
     <color name="calc_btn_digit_bg">#3B3B3B</color>
 
     <color name="calc_btn_equal_text">#0A1968</color>
-    <color name="calc_btn_equal_border">#23369C</color>
+    <color name="calc_btn_equal_border">#2196F3</color>
     <color name="calc_btn_equal_bg">#4CC1FE</color>
 
 </resources>

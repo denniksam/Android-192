@@ -4,7 +4,7 @@
     android:shape="rectangle">
 
     <corners
-        android:radius="10dp"/>
+        android:radius="5dp"/>
 
     <stroke
         android:color="@color/calc_btn_fn_border"
