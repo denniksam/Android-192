@@ -7,4 +7,16 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Calc colors -->
+    <color name="calc_btn_fn_text">#EEEEEE</color>
+    <color name="calc_btn_fn_border">#555555</color>
+    <color name="calc_btn_fn_bg">#323232</color>
+
+    <color name="calc_btn_digit_text">#FAFAFA</color>
+    <color name="calc_btn_digit_border">#595959</color>
+    <color name="calc_btn_digit_bg">#3B3B3B</color>
+
+    <color name="calc_btn_equal_text">#0A1968</color>
+
 </resources>

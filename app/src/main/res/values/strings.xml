@@ -9,4 +9,30 @@
     <!-- Calc Activity-->
     <string name="btn_percent_text">%</string>
 
+    <string name="btn_calc_percent">%</string>
+    <string name="btn_calc_clearE">CE</string>
+    <string name="btn_calc_clearAll">C</string>
+    <string name="btn_calc_backspace">\u232B</string>
+    <string name="btn_calc_inverse">\u00b9\u2044\u2093</string>
+    <string name="btn_calc_square">x\u00B2</string>
+    <string name="btn_calc_sqrt">\u221A\u2093</string>
+    <string name="btn_calc_divide">\u00F7</string>
+    <string name="btn_calc_multiplication">\u00D7</string>
+    <string name="btn_calc_minus">\u2212</string>
+    <string name="btn_calc_plus">\u002B</string>
+    <string name="btn_calc_plus_minus">\u207A\u2215\u208B</string>
+    <string name="btn_calc_comma">,</string>
+    <string name="btn_calc_equal">\uFF1D</string>
+
+    <string name="btn_calc_0">0</string>
+    <string name="btn_calc_1">1</string>
+    <string name="btn_calc_2">2</string>
+    <string name="btn_calc_3">3</string>
+    <string name="btn_calc_4">4</string>
+    <string name="btn_calc_5">5</string>
+    <string name="btn_calc_6">6</string>
+    <string name="btn_calc_7">7</string>
+    <string name="btn_calc_8">8</string>
+    <string name="btn_calc_9">9</string>
+
 </resources>
