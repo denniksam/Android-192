@@ -115,12 +115,22 @@ public class CalcActivity extends AppCompatActivity {
         // реалізувати алгоритм за яким у результаті залишається не більше 10 цифр
         // ("-" та "." не є цифрами та не входять до обмеження)
         String result = String.valueOf( arg ) ;
-        if( result.length() > 10 ) {
-            result = result.substring( 0, 10 ) ;
+        int finLength = 10 ;
+        if( result.startsWith( "-" ) )
+            finLength++ ;
+        if( result.contains( "." ) )
+            finLength++ ;
+        if( result.length() >= finLength ) {
+            result = result.substring( 0, finLength ) ;
         }
         tvResult.setText( result.replace( "-", minusSign ) ) ;
     }
 }
+/*
+Д.З. Реалізувати роботу кнопки "корень квадратний"
+Забезпечити перевірку аргументу на дозволеність (корень не обчислюється від негативних значень)
+Реалізувати ресурс для символу десяткової точки (коми), впровадити роботу з ним.
+ */
 /*
 Конфігурація пристрою, особливості.
 - До конфігурації належить: орієнтація пристрою, роздільна здатність, розмір активності, тощо
