@@ -20,8 +20,15 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById( R.id.exitButton )
                 .setOnClickListener( this::btnExitClick ) ;
+        findViewById( R.id.gameButton )
+                .setOnClickListener( this::btnGameClick ) ;
     }
-
+    private void btnGameClick( View v ) {
+        Intent gameIntent = new Intent(
+                MainActivity.this,
+                GameActivity.class ) ;
+        startActivity( gameIntent ) ;
+    }
     private void btnCalcClick( View v ) {
         Intent calcIntent = new Intent(
                 MainActivity.this,

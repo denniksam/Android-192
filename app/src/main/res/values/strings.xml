@@ -5,6 +5,9 @@
     <string name="tv_hello_content">Android Basics</string>
     <string name="btn_calc_text">Calculator</string>
     <string name="btn_exit_text">Exit App</string>
+    <string name="btn_game_text">Game 2048</string>
+
+    <!-- Game 2048 Activity -->
 
     <!-- Calc Activity-->
     <string name="btn_percent_text">%</string>
