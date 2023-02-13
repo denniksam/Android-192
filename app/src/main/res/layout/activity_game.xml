@@ -95,197 +95,84 @@
             android:layout_height="0dp"
             android:layout_weight="1">
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#BEAFA0"
-                android:gravity="center"
-                android:layout_margin="6dp"
+                android:id="@+id/game_cell_00"
+                style="@style/GameCell_0"
                 tools:text=""/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#EEE4DA"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#786E64"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_01"
+                style="@style/GameCell_2"
                 tools:text="2"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#EEE2CE"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#786F65"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_02"
+                style="@style/GameCell_4"
                 tools:text="4"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#F3B27F"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#F9F6F2"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_03"
+                style="@style/GameCell_8"
                 tools:text="8"/>
-            
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#F6976B"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#F9F4ED"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_10"
+                style="@style/GameCell_16"
                 tools:text="16"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#E58266"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#F9F6F1"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_11"
+                style="@style/GameCell_32"
                 tools:text="32"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#E36848"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#F9F6F1"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_12"
+                style="@style/GameCell_64"
                 tools:text="64"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#E8D07F"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#F8F6F3"
-                android:textSize="40sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_13"
+                style="@style/GameCell_128"
                 tools:text="128"/>
-
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#EEE4DA"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#786E64"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_20"
+                style="@style/GameCell_2"
                 tools:text="2"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#EEE4DA"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#786E64"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_21"
+                style="@style/GameCell_2"
                 tools:text="2"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#EEE4DA"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#786E64"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_22"
+                style="@style/GameCell_2"
                 tools:text="2"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#EEE4DA"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#786E64"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_23"
+                style="@style/GameCell_2"
                 tools:text="2"/>
-
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#EEE4DA"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#786E64"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_30"
+                style="@style/GameCell_2"
                 tools:text="2"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#EEE4DA"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#786E64"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_31"
+                style="@style/GameCell_2"
                 tools:text="2"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#EEE4DA"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#786E64"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_32"
+                style="@style/GameCell_2"
                 tools:text="2"/>
             <TextView
-                android:layout_height="match_parent"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:background="#EEE4DA"
-                android:gravity="center"
-                android:layout_margin="6dp"
-                android:textColor="#786E64"
-                android:textSize="50sp"
-                android:textStyle="bold"
+                android:id="@+id/game_cell_33"
+                style="@style/GameCell_2"
                 tools:text="2"/>
-
         </TableRow>
         
     </TableLayout>
