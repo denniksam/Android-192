@@ -6,12 +6,19 @@
     <string name="btn_calc_text">Calculator</string>
     <string name="btn_exit_text">Exit App</string>
     <string name="btn_game_text">Game 2048</string>
+    <string name="btn_rates_text">Currency rates</string>
+
+    <!-- Currency rates Activity -->
+    <string name="tv_rates_title">Currency rates</string>
 
     <!-- Game 2048 Activity -->
+    <string name="tv_score_pattern">SCORE\n%d</string>
+    <string name="tv_best_score_pattern">BEST\n%d</string>
+    <string name="game_victory_title">Перемога!</string>
+
 
     <!-- Calc Activity-->
     <string name="btn_percent_text">%</string>
-
     <string name="btn_calc_percent">%</string>
     <string name="btn_calc_clearE">CE</string>
     <string name="btn_calc_clearAll">C</string>
