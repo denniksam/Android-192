@@ -1,9 +1,13 @@
 package step.learning.basics;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.json.JSONArray;
@@ -84,6 +88,52 @@ public class RatesActivity extends AppCompatActivity {
         runOnUiThread( this::showContent ) ;
     }
     private void showContent() {
+        LinearLayout ratesContainer = findViewById( R.id.rates_container ) ;
+        Drawable rateBg = AppCompatResources.getDrawable(
+                getApplicationContext(),
+                R.drawable.rates_shape ) ;
+        Drawable rateBgRight = AppCompatResources.getDrawable(
+                getApplicationContext(),
+                R.drawable.rates_r_shape ) ;
+        /*
+        Margin, на відміну від Padding, є інструкцією для контейнера:
+        збирати свої елементи з певним відступом. Але, оскільки кожен
+        елемент може мати свої відступи, значення Margin належать елементу
+         */
+        LinearLayout.LayoutParams rateParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT ) ;
+        rateParams.setMargins( 10, 7, 10, 7 ) ;
+
+        LinearLayout.LayoutParams rateRightParams = new LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT ) ;
+        rateRightParams.setMargins( 10, 7, 10, 7 ) ;
+        rateRightParams.gravity = Gravity.END ;
+
+        boolean isLeft = true ;
+        for( Rate rate : this.rates ) {
+            TextView tvRate = new TextView( this ) ;
+            tvRate.setText( rate.toTvString() ) ;
+            tvRate.setPadding( 15, 5, 15, 5 ) ;
+            if( isLeft ) {
+                tvRate.setBackground(rateBg);
+                tvRate.setLayoutParams(rateParams);  // шлях додавання зовнішніх відступів
+            }
+            else {
+                tvRate.setBackground(rateBgRight);
+                tvRate.setLayoutParams(rateRightParams);
+            }
+            isLeft = ! isLeft ;
+            ratesContainer.addView( tvRate ) ;
+        }
+        /*
+        Завдання: зробити ще одну форму для відображення
+        (для орієнтації праворуч) з іншим кольором. Виводити курси
+        або через один, або випадковим чином ліворуч/праворуч
+         */
+    }
+    private void showContentTxt() {
         StringBuilder sb = new StringBuilder() ;
         /*
         Д.З. Реалізувати відображення курсів валют з ORM-колекції rates
@@ -100,6 +150,10 @@ public class RatesActivity extends AppCompatActivity {
         private double rate;
         private String cc;
         private String exchangeDate;
+
+        public String toTvString() {
+            return getTxt() + "\n" + getCc() + "  " + getRate() ;
+        }
 
         public Rate( JSONObject obj ) throws JSONException {
             setR030( obj.getInt(    "r030" ) ) ;

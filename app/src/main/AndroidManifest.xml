@@ -15,7 +15,14 @@
         android:theme="@style/Theme.Basics"
         tools:targetApi="31">
         <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+        <activity
             android:name=".RatesActivity"
+            android:parentActivityName=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".GameActivity"

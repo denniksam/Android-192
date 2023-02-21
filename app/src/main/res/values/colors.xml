@@ -8,6 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- Chat -->
+    <color name="chat_frame_border">#234A7A</color>
+
+    <!-- Rates -->
+    <color name="rate_bg_color">#F1C2C2</color>
+    <color name="rate_bg_r_color">#EEF1C2</color>
+
     <!-- Game 2048 -->
     <color name="game_bg_0">#BEAFA0</color>
     <color name="game_fg_0">#BEAFA0</color>

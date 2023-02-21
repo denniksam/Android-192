@@ -9,19 +9,30 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+
+import javax.net.ssl.HttpsURLConnection;
 
 public class GameActivity extends AppCompatActivity {
     private final int[][] cells = new int[4][4] ;  // числові значення комірок поля
@@ -87,8 +98,14 @@ public class GameActivity extends AppCompatActivity {
                         Toast.makeText(GameActivity.this, "Bottom", Toast.LENGTH_SHORT).show();
                     }
                 } ) ;
+        findViewById( R.id.game_start_new )
+                .setOnClickListener( this::newGameClick ) ;
 
         startNewGame() ;
+    }
+
+    private void newGameClick( View v ) {
+
     }
 
     private boolean saveBestScore() {
